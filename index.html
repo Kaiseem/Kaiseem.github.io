@@ -10,23 +10,65 @@
 	<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌐</text></svg>">
 </head>
 
+<script type="text/javascript">
+  function visibility_on(id) {
+       var e = document.getElementById(id+"_text");
+       if(e.style.display == 'none')
+           e.style.display = 'block';
+       var e = document.getElementById(id+"_img");
+       if(e.style.display == 'none')
+           e.style.display = 'block';
+  }
+  function visibility_off(id) {
+       var e = document.getElementById(id+"_text");
+       if(e.style.display == 'block')
+           e.style.display = 'none';
+       var e = document.getElementById(id+"_img");
+       if(e.style.display == 'block')
+           e.style.display = 'none';
+  }
+  function toggle_visibility(id) {
+      var e = document.getElementById(id+"_text");
+      if(e.style.display == 'inline')
+         e.style.display = 'block';
+      else
+         e.style.display = 'inline';
+      var e = document.getElementById(id+"_img");
+      if(e.style.display == 'inline')
+         e.style.display = 'block';
+      else
+         e.style.display = 'inline';
+  }
+  function toggle_vis(id) {
+      var e = document.getElementById(id);
+      if (e.style.display == 'none')
+          e.style.display = 'inline';
+      else
+          e.style.display = 'none';
+  }
+</script>
+
+
 <body>
-<table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-  <tbody>
-  <tr style="padding:0px">
-    <td style="padding:0px">
-      <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-        <tbody>
-        <tr style="padding:0px">
-          <td style="padding:2.5%;width:63%;vertical-align:middle">
-            <p style="text-align:center">
-              <name>Kai Yao</name>
-            </p>
+  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+    <tr style="padding:0px">
+      <td style="padding:0px">
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr style="padding:0px">
+            <td style="padding:2.5%;width:63%;vertical-align:middle">
+              <p style="text-align:center">
+                <name>Kai Yao</name>
+              </p>
             <p> I am a Year 4 Ph.D. student (2019.12-2023.12) advised by Prof. <a
                     href="http://www.premilab.com/KaizhuHUANG.ashx">Kaizhu Huang</a> at <a
                     href="https://www.liverpool.ac.uk">University of Liverpool</a>. My research background lies in
               computer vision and machine learning.
             </p>
+              <p>
+                <i>
+                  <!-- Here is my quote. -->
+                  <!-- Specifically, I am interested in building machine learning algorithms for visual tasks with minimum human supervision. -->
+                </i>
             <p>
               I have been working on some research topics including unsupervised learning, domain generalization, domain
               adaptation, and image generation. Previously, I completed B.Eng. at Xi'an Jiaotong-Liverpool University at
@@ -38,38 +80,34 @@
               <a href="https://scholar.google.com/citations?hl=en&user=pnsLGLMAAAAJ">Google Scholar</a> &nbsp/&nbsp
               <a href="https://github.com/Kaiseem/">Github</a>
             </p>
-          </td>
-          <td style="padding:2.5%;width:40%;max-width:40%">
-            <a href="images/kaiyao.png"><img style="width:100%;max-width:100%" alt="profile photo"
-                                             src="images/kaiyao.png" class="hoverZoomLink"></a>
-          </td>
-        </tr>
-        </tbody>
-      </table>
-
-      <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+            </td>
+            <td style="padding:2.5%;width:40%;max-width:40%">
+              <img style="width:100%;max-width:100%" alt="profile photo" src="images/kaiyao.png">
+            </td>
+          </tr>
+        </tbody></table>
+  <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
         <tbody><tr><td>
             <heading>News</heading>
             <ul>
-                <li>Jul 2022 -  2022.</li>
+                <li>Jul 2022 - x022.</li>
                 <li> <a href="javascript:toggle_vis('news')">show more</a> </li>
                 <div id="news" style="display:none">
-              <li>Mar 2018 -ab!</li>
+              <li>Mar 2018 - Ix!</li>
               </div>
             </ul>
         </td></tr>
 
-        <tr>
+      <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr>
           <td style="padding:20px;width:100%;vertical-align:middle">
             <heading>Publication</heading>
-<!--            <p>-->
-<!--              I'm interested in computer vision, machine learning, and image processing. Representative papers are <span-->
-<!--                    class="highlight">highlighted</span>.-->
-<!--            </p>-->
+            <!-- <p>
+              I'm interested in computer vision, machine learning, optimization, and image processing. Much of my research is about inferring the physical world (shape, motion, color, light, etc) from images. Representative papers are <span class="highlight">highlighted</span>.
+            </p> -->
           </td>
         </tr>
-        </tbody>
-      </table>
+      </tbody></table>
 
    <!----------------------------------- SLAug (AAAI'22) ------------------------------------------------->
           <tr onmouseout="mlbpm_stop()" onmouseover="mlbpm_start()">
