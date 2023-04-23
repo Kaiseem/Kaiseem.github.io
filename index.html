@@ -102,6 +102,9 @@
                     <td>
                         <heading>News</heading>
                         <ul>
+                            <li>Apr 2023 - Our two journal papers accepted. Meanwhile, I am starting a new open source project <a
+                                    href="https://github.com/Kaiseem/sd-webui-imageguard">ImageGuard</a>, which is an extension is for AUTOMATIC1111's Stable Diffusion web UI.
+                            </li>
                             <li>Jan 2023 - We release the code for <a
                                     href="https://github.com/Kaiseem/AD-GAN">AD-GAN</a>, under review.
                             </li>
@@ -135,9 +138,9 @@
                     <tr>
                         <td style="padding:20px;width:100%;vertical-align:middle">
                             <heading>Publication</heading>
-                            <!-- <p>
-                              I'm interested in computer vision, machine learning, optimization, and image processing. Much of my research is about inferring the physical world (shape, motion, color, light, etc) from images. Representative papers are <span class="highlight">highlighted</span>.
-                            </p> -->
+                            <p>
+                            First author papers are <span class="highlight">highlighted</span>.
+                            </p>
                         </td>
                     </tr>
                     </tbody>
@@ -146,8 +149,90 @@
                 <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
                     <tbody>
 
+               <!----------------------------------- GAP (JBHI'23) ------------------------------------------------->
+                    <tr onmouseout="gap_stop()" onmouseover="gap_start()">
+                        <td style="padding:20px;width:25%;vertical-align:middle">
+                            <div class="one">
+                                <div class="two" id='gap_image'>
+                                    <img src='images/jbhi23_gap.png' width="160"></div>
+                                <img src='images/jbhi23_gap.png' width="160">
+                            </div>
+                            <script type="text/javascript">
+                function gap_start() {
+                  document.getElementById('gap_image').style.opacity = "1";
+                }
+                function gap_stop() {
+                  document.getElementById('gap_image').style.opacity = "0";
+                }
+                daru_stop()
+
+                            </script>
+                        </td>
+                        <td style="padding:20px;width:75%;vertical-align:middle">
+                            <a href="https://arxiv.org/abs/2205.11888">
+                                <papertitle>Mind The Gap: Alleviating Local Imbalance for Unsupervised Cross-Modality Medical Image Segmentation
+                                </papertitle>
+                            </a>
+                            <br>
+                            <a href="https://scholar.google.com/citations?user=E-Mcb5AAAAAJ">Zixian Su</a>,
+                            <strong>Kai Yao</strong>,
+                            <a href="https://www.xjtlu.edu.cn/en/departments/academic-departments/intelligent-science/staff/xi-yang01">Xi Yang</a>,
+                            Qiufeng Wang,
+                            Yuyao Yan,
+                            <a href="http://www.premilab.com/KaizhuHUANG.ashx">Kaizhu Huang</a>,
+                            <br>
+                            <em>IEEE Journal of Biomedical and Health Informatics (JBHI)</em>, 2023
+
+                            <p></p>
+                            <p>
+                                We propose a novel strategy to alleviate the domain gap imbalance considering the characteristics of medical images, namely Global-Local Union Alignment.
+                            </p>
+                        </td>
+                    </tr>
+
+                    <!----------------------------------- Processes 23 ------------------------------------------------->
+                    <tr onmouseout="Processes_stop()" onmouseover="Processes_start()">
+                        <td style="padding:20px;width:25%;vertical-align:middle">
+                            <div class="one">
+                                <div class="two" id='Processes_image'>
+                                    <img src='images/process_23.png' width="160"></div>
+                                <img src='images/process_23.png' width="160">
+                            </div>
+                            <script type="text/javascript">
+                function Processes_start() {
+                  document.getElementById('Processes_image').style.opacity = "1";
+                }
+                function Processes_stop() {
+                  document.getElementById('Processes_image').style.opacity = "0";
+                }
+                mp_stop()
+
+                            </script>
+                        </td>
+                        <td style="padding:20px;width:75%;vertical-align:middle">
+                            <a href="https://www.mdpi.com/2227-9717/11/4/1003">
+                                <papertitle>Machine Learning Methods in Skin Disease Recognition: A Systematic Review</papertitle>
+                            </a>
+                            <br>
+                            <a href="https://www.xjtlu.edu.cn/zh/departments/academic-departments/industrial-design/staff/jie-sun">Jie Sun</a>,
+                            <strong>Kai Yao</strong>,
+                            Guangyao Huang,
+                            Chengrui Zhang,
+                            Mark Leach,
+                            <a href="http://www.premilab.com/KaizhuHUANG.ashx">Kaizhu Huang</a>,
+                            Xi Yang
+                            <br>
+                            <em>Processes</em>, 2023
+                            <p></p>
+                            <p>
+                                This paper overviews the status and progress of ML applications for skin disease recognition.
+                            </p>
+                        </td>
+                    </tr>
+
+
                     <!----------------------------------- SLAug (AAAI'23) ------------------------------------------------->
-                    <tr onmouseout="slaug_stop()" onmouseover="slaug_start()">
+                    <tr onmouseout="slaug_stop()" onmouseover="slaug_start()" bgcolor="#ffffd0">
                         <td style="padding:20px;width:25%;vertical-align:middle">
                             <div class="one">
                                 <div class="two" id='slaug_image'>
@@ -199,7 +284,7 @@
                     </tr>
 
                     <!----------------------------------- QueryOTR (ECCV'22) ------------------------------------------------->
-                    <tr onmouseout="queryotr_stop()" onmouseover="queryotr_start()">
+                    <tr onmouseout="queryotr_stop()" onmouseover="queryotr_start()"   bgcolor="#ffffd0">
                         <td style="padding:20px;width:25%;vertical-align:middle">
                             <div class="one">
                                 <div class="two" id='queryotr_image'>
@@ -248,7 +333,7 @@
                     </tr>
 
                     <!----------------------------------- DAR-UNet (JBHI'22) ------------------------------------------------->
-                    <tr onmouseout="daru_stop()" onmouseover="daru_start()">
+                    <tr onmouseout="daru_stop()" onmouseover="daru_start()"   bgcolor="#ffffd0">
                         <td style="padding:20px;width:25%;vertical-align:middle">
                             <div class="one">
                                 <div class="two" id='daru_image'>
@@ -336,7 +421,7 @@
 
 
                     <!----------------------------------- arxiv 21 ------------------------------------------------->
-                    <tr onmouseout="pun_stop()" onmouseover="pun_start()">
+                    <tr onmouseout="pun_stop()" onmouseover="pun_start()"   bgcolor="#ffffd0">
                         <td style="padding:20px;width:25%;vertical-align:middle">
                             <div class="one">
                                 <div class="two" id='pun_image'>
@@ -379,7 +464,7 @@
 
 
                     <!----------------------------------- IJB 21 ------------------------------------------------->
-                    <tr onmouseout="ana_stop()" onmouseover="ana_start()">
+                    <tr onmouseout="ana_stop()" onmouseover="ana_start()"   bgcolor="#ffffd0">
                         <td style="padding:20px;width:25%;vertical-align:middle">
                             <div class="one">
                                 <div class="two" id='ana_image'>
@@ -421,7 +506,7 @@
                     </tr>
 
                     <!----------------------------------- arxiv 21 ------------------------------------------------->
-                    <tr onmouseout="adgan_stop()" onmouseover="adgan_start()">
+                    <tr onmouseout="adgan_stop()" onmouseover="adgan_start()"   bgcolor="#ffffd0">
                         <td style="padding:20px;width:25%;vertical-align:middle">
                             <div class="one">
                                 <div class="two" id='adgan_image'>
@@ -500,7 +585,7 @@
                     </tr>
 
                     <!----------------------------------- CC21 ------------------------------------------------->
-                    <tr onmouseout="a549_stop()" onmouseover="a549_start()">
+                    <tr onmouseout="a549_stop()" onmouseover="a549_start()"   bgcolor="#ffffd0">
                         <td style="padding:20px;width:25%;vertical-align:middle">
                             <div class="one">
                                 <div class="two" id='a549_image'>
@@ -621,7 +706,7 @@
 
 
                     <!----------------------------------- ICONIP18 ------------------------------------------------->
-                    <tr onmouseout="kmmo_stop()" onmouseover="kmmo_start()">
+                    <tr onmouseout="kmmo_stop()" onmouseover="kmmo_start()"   bgcolor="#ffffd0">
                         <td style="padding:20px;width:25%;vertical-align:middle">
                             <div class="one">
                                 <div class="two" id='kmmo_image'>
