@@ -102,8 +102,10 @@
                     <td>
                         <heading>News</heading>
                         <ul>
+                            <li>May 2023 - Our journal paper accepted in IEEE TETCI.
+                            </li>
                             <li>Apr 2023 - Our two journal papers accepted. Meanwhile, I am starting a new open source project <a
-                                    href="https://github.com/Kaiseem/sd-webui-imageguard">ImageGuard</a>, which is an extension is for AUTOMATIC1111's Stable Diffusion web UI.
+                                    href="https://github.com/Kaiseem/sd-webui-imageguard">ImageGuard</a>.
                             </li>
                             <li>Jan 2023 - We release the code for <a
                                     href="https://github.com/Kaiseem/AD-GAN">AD-GAN</a>, under review.
@@ -116,18 +118,19 @@
                                 vision-transformer-based GAN for image outpainting.
                                 The code released at <a href="https://github.com/Kaiseem/QueryOTR">here</a>.
                             </li>
-                            <li>Jun 2022 - Our journal paper accepted in IEEE-JBHI (IF: 7.0).</li>
+
+                            <li><a href="javascript:toggle_vis('news')">show more</a></li>
+                            <div id="news" style="display:none">
+                                                            <li>Jun 2022 - Our journal paper accepted in IEEE-JBHI (IF: 7.0).</li>
                             <li>Dec 2021 - Our team PremiLab wins 5th in the Challenge <a
                                     href="https://www.sciencedirect.com/science/article/pii/S1361841522002560">CrossMoDa
                                 2021 (MICCAI workshop)</a>.
                             </li>
-                            <li><a href="javascript:toggle_vis('news')">show more</a></li>
-                            <div id="news" style="display:none">
                                 <li>Dec 2021 - Our journal paper accepted in International Journal of Bioprinting (IF:
                                     7.4).
                                 </li>
                                 <li>Nov 2021 - Our journal paper accepted in Cognitive Computation (IF: 4.9).</li>
-                              <li>Dec 2019 - I started my PhD course at UoL PremiLab Lab with full scholarship!</li>
+                              <li>Dec 2019 - I started my PhD course at UoL PremiLab Lab with full scholarship.</li>
                             </div>
                         </ul>
                     </td>
@@ -146,8 +149,50 @@
                     </tbody>
                 </table>
 
+
                 <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
                     <tbody>
+                    <!----------------------------------- TETCI 23 ------------------------------------------------->
+                    <tr onmouseout="pun_stop()" onmouseover="pun_start()"   bgcolor="#ffffd0">
+                        <td style="padding:20px;width:25%;vertical-align:middle">
+                            <div class="one">
+                                <div class="two" id='pun_image'>
+                                    <img src='images/arxiv_pointnunet_after.png' width="160"></div>
+                                <img src='images/arxiv_pointnunet.png' width="160">
+                            </div>
+                            <script type="text/javascript">
+                function pun_start() {
+                  document.getElementById('pun_image').style.opacity = "1";
+                }
+                function pun_stop() {
+                  document.getElementById('pun_image').style.opacity = "0";
+                }
+                pun_stop()
+
+                            </script>
+                        </td>
+                        <td style="padding:20px;width:75%;vertical-align:middle">
+                            <a href="https://arxiv.org/pdf/2111.01557.pdf">
+                                <papertitle>PointNu-Net: Simultaneous Multi-tissue Histology Nuclei Segmentation and
+                                    Classification in the Clinical Wild
+                                </papertitle>
+                            </a>
+                            <br>
+                            <strong>Kai Yao</strong>,
+                            <a href="http://www.premilab.com/KaizhuHUANG.ashx">Kaizhu Huang</a>,
+                            <a href="https://www.xjtlu.edu.cn/zh/departments/academic-departments/industrial-design/staff/jie-sun">Jie Sun</a>,
+                            Amir Hussain,
+                            Curran Jude
+                            <br>
+                            <em>IEEE Transactions on Emerging Topics in Computational Intelligence (TETCI)</em>, 2023
+                            <p></p>
+                            <p>
+                                In this study, we proposed a novel keypoint-aware method to to simultaneously detect,
+                                segment, and classify nuclei from Haematoxylin and Eosin (H&E) stained histopathology
+                                data.
+                            </p>
+                        </td>
+                    </tr>
 
                <!----------------------------------- GAP (JBHI'23) ------------------------------------------------->
                     <tr onmouseout="gap_stop()" onmouseover="gap_start()">
@@ -420,47 +465,6 @@
                     </tr>
 
 
-                    <!----------------------------------- arxiv 21 ------------------------------------------------->
-                    <tr onmouseout="pun_stop()" onmouseover="pun_start()"   bgcolor="#ffffd0">
-                        <td style="padding:20px;width:25%;vertical-align:middle">
-                            <div class="one">
-                                <div class="two" id='pun_image'>
-                                    <img src='images/arxiv_pointnunet_after.png' width="160"></div>
-                                <img src='images/arxiv_pointnunet.png' width="160">
-                            </div>
-                            <script type="text/javascript">
-                function pun_start() {
-                  document.getElementById('pun_image').style.opacity = "1";
-                }
-                function pun_stop() {
-                  document.getElementById('pun_image').style.opacity = "0";
-                }
-                pun_stop()
-
-                            </script>
-                        </td>
-                        <td style="padding:20px;width:75%;vertical-align:middle">
-                            <a href="https://arxiv.org/pdf/2111.01557.pdf">
-                                <papertitle>PointNu-Net: Simultaneous Multi-tissue Histology Nuclei Segmentation and
-                                    Classification in the Clinical Wild
-                                </papertitle>
-                            </a>
-                            <br>
-                            <strong>Kai Yao</strong>,
-                            <a href="http://www.premilab.com/KaizhuHUANG.ashx">Kaizhu Huang</a>,
-                            <a href="https://www.xjtlu.edu.cn/zh/departments/academic-departments/industrial-design/staff/jie-sun">Jie Sun</a>,
-                            Amir Hussain,
-                            Curran Jude
-                            <br>
-                            <em>Preprint, under review.</em>, 2021
-                            <p></p>
-                            <p>
-                                In this study, we proposed a novel keypoint-aware method to to simultaneously detect,
-                                segment, and classify nuclei from Haematoxylin and Eosin (H&E) stained histopathology
-                                data.
-                            </p>
-                        </td>
-                    </tr>
 
 
                     <!----------------------------------- IJB 21 ------------------------------------------------->
